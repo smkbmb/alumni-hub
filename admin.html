@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - SMKBMB Alumni Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>SMKBMB Alumni Hub - Admin</h1>
+    <nav>
+      <a href="index.html">Donate</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="admin-login">
+      <h2>Admin Login</h2>
+      <form id="loginForm">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Login</button>
+      </form>
+    </section>
+
+    <section id="admin-dashboard" class="hidden">
+      <h2>Donation Management</h2>
+      <div id="pending-donations">
+        <h3>Pending Donations</h3>
+        <ul id="pending-list"></ul>
+      </div>
+
+      <div id="update-progress">
+        <h3>Update Donation Progress</h3>
+        <label for="raised-amount">Raised Amount (RM):</label>
+        <input type="number" id="raised-amount" name="raised-amount" required>
+        <button id="update-button">Update Progress</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 SMKBMB Alumni Hub</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
