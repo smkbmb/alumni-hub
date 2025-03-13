@@ -26,9 +26,9 @@
     <section id="donation-progress">
       <h2>Donation Progress</h2>
       <div class="progress-bar">
-        <div id="progress" style="width: 30%;"></div>
+        <div id="progress"></div>
       </div>
-      <p>Goal: RM 10,000 | Raised: RM 3,000</p>
+      <p>Goal: RM 10,000 | Raised: RM <span id="raised-amount">0</span></p>
     </section>
 
     <section id="donation-list">
@@ -45,9 +45,9 @@
       <form id="donationForm">
         <label for="item">Select Item to Donate:</label>
         <select id="item" name="item" required>
-          <option value="uniform">Marching Band Uniform</option>
-          <option value="instrument">Musical Instrument</option>
-          <option value="transport">Transportation Fund</option>
+          <option value="500">Marching Band Uniform (RM 500)</option>
+          <option value="1000">Musical Instrument (RM 1,000)</option>
+          <option value="2000">Transportation Fund (RM 2,000)</option>
         </select>
 
         <label for="name">Your Name (Optional):</label>
